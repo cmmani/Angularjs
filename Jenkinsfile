@@ -9,7 +9,7 @@ pipeline {
         stage ('Build') {
             steps {
 		sh 'rm -rf /etc/puppetlabs/code/environments/production/modules/mymodule/files/Angularjs/*'
-                sh 'mv -f /home/zippyops/workspace/angular/* /etc/puppetlabs/code/environments/production/modules/mymodule/files/' 
+                sh 'mv -f /home/zippyops/workspace/angular/* /etc/puppetlabs/code/environments/production/modules/mymodule/files/Angularjs/' 
 	    }
           } 
     }
